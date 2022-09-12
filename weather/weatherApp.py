@@ -31,7 +31,8 @@ class WeatherInformation():
         fahrenheit_result = w.get_temperature('fahrenheit')
         temp_min_fahrenheit = str(fahrenheit_result.get('temp_min'))
         temp_max_fahrenheit = str(fahrenheit_result.get('temp_max'))
-        self.bot_says = "Today the weather in " + city + " is :\n Maximum Temperature :"+temp_max_celsius + " Degree Celsius"+".\n Minimum Temperature :" + \
-            temp_min_celsius + " Degree Celsius" + ": \n" + "Humidity :" + \
-            humidity + "%" + " .\n Wind Speed :" + str(wind_speed) + " Longitude : " + str(lat) + " Latitude : " + str(lat)
+        self.bot_says = f'Today the weather in {city} is:\nMaximum Temperature: {temp_max_celsius} Degree Celsius\nMinimum Temperature: {temp_min_celsius} Degree Celsius\nHumidity: {humidity} %\nWind Speed: {wind_speed}\nLongitude: {lat}   Latitude: {lat}'
+        # self.bot_says = "Today the weather in " + city + " is :\n Maximum Temperature :"+temp_max_celsius + " Degree Celsius"+".\n Minimum Temperature :" + \
+        #     temp_min_celsius + " Degree Celsius" + ": \n" + "Humidity :" + \
+        #     humidity + "%" + " .\n Wind Speed :" + str(wind_speed) + " Longitude : " + str(lat) + " Latitude : " + str(lat)
         return self.bot_says

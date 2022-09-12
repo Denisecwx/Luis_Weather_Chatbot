@@ -9,7 +9,8 @@ class Greetings():
 
     def get_greetings_response(self, greet):
         self.greet = greet
-        bot_response = ['Hi there! My name is Weather-Bot, I’ll be happy to assist you right away!', 'Hello, thanks for asking',
+        bot_response = ['Hi there! My name is Weather-Bot, I’ll be happy to assist you right away!',
+                        'Hello, thanks for asking',
                         'Good to see you again', 'Hi there, how can I help?']
         self.bot_says = random.choice(bot_response)
         return self.bot_says
@@ -26,7 +27,8 @@ class Greetings():
 
     def get_goodbye_response(self, goodbye):
         self.greet = goodbye
-        bot_response = ["See you!", "Have a nice day",
+        bot_response = ["See you!",
+                        "Have a nice day",
                         "Bye! Come back again soon."]
 
         self.bot_says = random.choice(bot_response)
